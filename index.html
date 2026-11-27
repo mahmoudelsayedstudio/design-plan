@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>خطة أسبوعين لتعلّم التصميم</title>
-<meta name="description" content="خطة ١٤ يوم لتعلّم البراند آيدينتيتي والجريد والتايبوجرافي وإليستريتور، من ٢٧ نوفمبر لحد ١٠ ديسمبر ٢٠٢٦.">
+<title>خطة شهر لتعلّم التصميم</title>
+<meta name="description" content="خطة ٢٧ يوم لتعلّم الأساسيات واللون والجريد والتايبوجرافي والبراند آيدينتيتي وإليستريتور، من ٢٨ نوفمبر لحد ٢٤ ديسمبر ٢٠٢٦. كل الكورسات عربي ومجانية وحديثة.">
 <meta name="theme-color" content="#f3ead9">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -171,8 +171,8 @@ p { margin: 0; }
       <span class="cp-tape cp-tape-ochre cp-hero-tape-r" aria-hidden="true"></span>
       <span class="cp-tape cp-tape-teal cp-hero-tape-l" aria-hidden="true"></span>
     </div>
-    <h1 class="cp-title reveal" style="--d:.08s">خطة أسبوعين لتعلّم التصميم</h1>
-    <p class="cp-sub reveal" style="--d:.16s">١٤ يوم من ٢٧ نوفمبر لحد ١٠ ديسمبر. علّم على كل يوم تخلصه، والعدّاد هيفضل محفوظ على موبايلك.</p>
+    <h1 class="cp-title reveal" style="--d:.08s">خطة شهر لتعلّم التصميم</h1>
+    <p class="cp-sub reveal" style="--d:.16s">٢٧ يوم من ٢٨ نوفمبر لحد ٢٤ ديسمبر. كل الكورسات عربي ومجانية وحديثة. علّم على كل يوم تخلصه، والعدّاد هيفضل محفوظ على موبايلك.</p>
   </header>
 
   <section class="cp-progress reveal" style="--rr:.7deg" aria-label="تقدمك في الخطة">
@@ -200,24 +200,36 @@ p { margin: 0; }
   <section class="cp-week" id="week1" aria-label="الأسبوع الأول">
     <div class="cp-week-head reveal">
       <h2 class="cp-week-title">الأسبوع الأول</h2>
-      <span class="cp-week-range">٢٧ نوفمبر ← ٣ ديسمبر</span>
+      <span class="cp-week-range">٢٨ نوفمبر ← ٤ ديسمبر</span>
     </div>
   </section>
-
   <div class="tear t2" aria-hidden="true"></div>
-
   <section class="cp-week" id="week2" aria-label="الأسبوع التاني">
     <div class="cp-week-head reveal">
       <h2 class="cp-week-title">الأسبوع التاني</h2>
-      <span class="cp-week-range">٤ ← ١٠ ديسمبر</span>
+      <span class="cp-week-range">٥ ← ١١ ديسمبر</span>
+    </div>
+  </section>
+  <div class="tear t2" aria-hidden="true"></div>
+  <section class="cp-week" id="week3" aria-label="الأسبوع التالت">
+    <div class="cp-week-head reveal">
+      <h2 class="cp-week-title">الأسبوع التالت</h2>
+      <span class="cp-week-range">١٢ ← ١٨ ديسمبر</span>
+    </div>
+  </section>
+  <div class="tear t2" aria-hidden="true"></div>
+  <section class="cp-week" id="week4" aria-label="الأسبوع الرابع">
+    <div class="cp-week-head reveal">
+      <h2 class="cp-week-title">الأسبوع الرابع</h2>
+      <span class="cp-week-range">١٩ ← ٢٤ ديسمبر</span>
     </div>
   </section>
 
   <section class="cp-buffer" aria-label="أيام احتياطي">
     <div class="cp-buffer-note reveal" style="--rr:-.9deg">
       <span class="cp-tape cp-tape-terra" aria-hidden="true"></span>
-      <h2 class="cp-buffer-title">أيام احتياطي: ١١ ← ١٣ ديسمبر</h2>
-      <p>لو يوم فاتك، لحقه هنا من غير ما تزعل نفسك. الخطة مظبوطة على إن الحياة بتحصل.</p>
+      <h2 class="cp-buffer-title">يوم احتياطي جوه الخطة: ١٥ ديسمبر</h2>
+      <p>لو يوم فاتك، لحقه يوم ١٥ ديسمبر من غير ما تزعل نفسك. والجمعة ٢٥ ديسمبر راحة بعد آخر يوم. الخطة مظبوطة على إن الحياة بتحصل.</p>
     </div>
   </section>
 
@@ -231,42 +243,74 @@ p { margin: 0; }
 <script>
 "use strict";
 const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const KEY = "collage-plan.v1";
+const KEY = "collage-plan.v2";
 const AR = "٠١٢٣٤٥٦٧٨٩";
 const arDigits = (n) => String(n).replace(/\d/g, (d) => AR[Number(d)]);
 
 const courses = [
-  { id: "identity", name: "كورس البراند آيدينتيتي", source: "تيرا كورسسز، تقديم ج. سالم", url: "https://teracourses.com/ar/course/visual-identity-design-course1", color: "cp-c-terra" },
-  { id: "grid", name: "كورس الجريد واللاي آوت", source: "تيرا كورسسز، تقديم نور حمصي", url: "https://teracourses.com/ar/course/graphic-design-fundamentals-course2", color: "cp-c-teal" },
-  { id: "typo-ar", name: "كورس التايبوجرافي العربي", source: "منصة معارف، أحمد مصطفى، ٣٧ دقيقة", url: "https://www.m3aarf.com/certificate/16873/%D8%A7%D8%B3%D8%A7%D8%B3%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%A7%D9%8A%D8%A8%D9%88%D8%AC%D8%B1%D8%A7%D9%81%D9%8A-video", color: "cp-c-ochre" },
-  { id: "typo-en", name: "فيديو التايبوجرافي الإنجليزي", source: "يوتيوب، ٤٠ دقيقة", url: "https://www.youtube.com/watch?v=yAuUDyUC-GM", color: "cp-c-ink" },
-  { id: "illustrator", name: "كورس إليستريتور", source: "موقع الببلي، ١١ درس، حوالي ٦ ساعات ونص", url: "https://elbabley.com/course/illustrator-free/", color: "cp-c-olive" }
+  { id: "fund", name: "أساسيات التصميم", source: "أحمد حمدي، ٦١ دقيقة", url: "https://www.youtube.com/watch?v=4IJPI0d7STI", color: "cp-c-terra" },
+  { id: "color", name: "نظرية اللون", source: "فات جرافيكس، ٢٦ دقيقة", url: "https://www.youtube.com/watch?v=Vk7apgX3PAs", color: "cp-c-teal" },
+  { id: "color-book", name: "ملخص كتاب تفاعل اللون", source: "فات جرافيكس، ٤ أجزاء، ٢٩ دقيقة", url: "https://www.youtube.com/watch?v=KiRN63rfb3U", color: "cp-c-ochre" },
+  { id: "grid-types", name: "أنواع الجريد", source: "فات جرافيكس، ١٨ دقيقة", url: "https://www.youtube.com/watch?v=V_cGBPtBGhI", color: "cp-c-ink" },
+  { id: "layout-1", name: "أسرار اللاي آوت، الجزء الأول", source: "فات جرافيكس", url: "https://www.youtube.com/watch?v=RcQtd1eUGuk", color: "cp-c-olive" },
+  { id: "layout-2", name: "أسرار اللاي آوت، الجزء التاني", source: "فات جرافيكس", url: "https://www.youtube.com/watch?v=dfi5at7wWQI", color: "cp-c-terra" },
+  { id: "grid-book", name: "ملخص كتاب أنظمة الجريد", source: "فات جرافيكس، ٤ أجزاء، ٤١ دقيقة", url: "https://www.youtube.com/watch?v=THSz2aw26fU", color: "cp-c-teal" },
+  { id: "maher", name: "درس الجريد واللاي آوت", source: "أحمد ماهر، حوالي ساعتين", url: "https://www.youtube.com/watch?v=nqSq8CvXj4s", color: "cp-c-ochre" },
+  { id: "indesign", name: "الجريد الموديولار في إنديزاين", source: "فات جرافيكس، ٣٤ دقيقة", url: "https://www.youtube.com/watch?v=j-2gcxnahds", color: "cp-c-ink" },
+  { id: "typo-book", name: "ملخص كتاب التفكير في التايبوجرافي", source: "فات جرافيكس، ٤ أجزاء، ٣٧ دقيقة", url: "https://www.youtube.com/watch?v=1ZAZ6OEb_r4", color: "cp-c-olive" },
+  { id: "typo-design", name: "التايبوجرافي في التصميم", source: "فات جرافيكس، ٢٠ دقيقة", url: "https://www.youtube.com/watch?v=iMrXclwIIdI", color: "cp-c-terra" },
+  { id: "rafeeq", name: "ورشة التايبوجرافي العربي", source: "ستوديو رفيق، جزأين، الأول ٧٦ دقيقة", url: "https://www.youtube.com/playlist?list=PL4nPafUQJuXDSL-PDFA3s4uhaSywrzavr", color: "cp-c-teal" },
+  { id: "fg-id-1", name: "سلسلة البراند آيدينتيتي، جزء ١", source: "فات جرافيكس، السلسلة ١١٢ دقيقة", url: "https://www.youtube.com/watch?v=4p87PLwFExI", color: "cp-c-ochre" },
+  { id: "fg-id-2", name: "سلسلة البراند آيدينتيتي، جزء ٢", source: "فات جرافيكس", url: "https://www.youtube.com/watch?v=nXTPt_eVJCY", color: "cp-c-ochre" },
+  { id: "fg-id-3", name: "سلسلة البراند آيدينتيتي، جزء ٣", source: "فات جرافيكس", url: "https://www.youtube.com/watch?v=Ty1BzoXWbQc", color: "cp-c-ochre" },
+  { id: "fg-id-4", name: "سلسلة البراند آيدينتيتي، جزء ٤", source: "فات جرافيكس", url: "https://www.youtube.com/watch?v=BsfeMgYBDXQ", color: "cp-c-ochre" },
+  { id: "artdir", name: "الآرت دايركشن", source: "أورانج سكوير، ٢٤ دقيقة", url: "https://www.youtube.com/watch?v=hFEtBCczEAI", color: "cp-c-ink" },
+  { id: "kamal", name: "كورس البراند آيدينتيتي", source: "كمال وحيد، ١٣ حلقة، اللينك أول حلقة", url: "https://www.youtube.com/watch?v=mruszp9VPEY", color: "cp-c-olive" },
+  { id: "yaser", name: "كورس إليستريتور", source: "ياسر سامي، ساعة و٥٥ دقيقة", url: "https://www.youtube.com/watch?v=xi1ierdIux4", color: "cp-c-terra" },
+  { id: "qadri", name: "كورس إليستريتور المكثف", source: "قدري المنشاوي، ساعتين و٥٥ دقيقة", url: "https://www.youtube.com/watch?v=RDTeysmgYiA", color: "cp-c-teal" },
+  { id: "hwthr", name: "كورس الهوية المكثف، اختياري", source: "هوثر، ٦ ساعات و٤٩ دقيقة", url: "https://www.youtube.com/watch?v=lbbxs7vbMQY", color: "cp-c-ochre" },
+  { id: "calligraphy", name: "الخط العربي للهويات، اختياري", source: "جرافيكس أكاديمي، ١١ درس", url: "https://graphics-academy.com/courses/arabic-calligraphy-design/", color: "cp-c-ink" }
 ];
 const courseById = Object.fromEntries(courses.map((c) => [c.id, c]));
 
 const days = [
-  { id: "d01", iso: "2026-11-27", date: "جمعة ٢٧ نوفمبر", title: "أول ٣ دروس من كورس البراند آيدينتيتي", detail: "كورس البراند آيدينتيتي على تيرا كورسسز. أول يوم، ابدأ بهدوء.", courseIds: ["identity"], kind: "study" },
-  { id: "d02", iso: "2026-11-28", date: "سبت ٢٨ نوفمبر", title: "دروس ٤ لحد ٧ من البراند آيدينتيتي", detail: "كورس البراند آيدينتيتي، تيرا كورسسز.", courseIds: ["identity"], kind: "study" },
-  { id: "d03", iso: "2026-11-29", date: "حد ٢٩ نوفمبر", title: "أول ٥ دروس من كورس الجريد واللاي آوت", detail: "كورس الجريد واللاي آوت، تيرا كورسسز.", courseIds: ["grid"], kind: "study" },
-  { id: "d04", iso: "2026-11-30", date: "اتنين ٣٠ نوفمبر", title: "راحة", detail: "يوم راحة، خد نفسك.", courseIds: [], kind: "rest" },
-  { id: "d05", iso: "2026-12-01", date: "تلات ١ ديسمبر", title: "دروس ٨ لحد ١١ من البراند آيدينتيتي", detail: "كورس البراند آيدينتيتي، تيرا كورسسز.", courseIds: ["identity"], kind: "study" },
-  { id: "d06", iso: "2026-12-02", date: "أربع ٢ ديسمبر", title: "التايبوجرافي العربي والإنجليزي", detail: "الكورس العربي ٣٧ دقيقة على معارف، وبعده الفيديو الإنجليزي ٤٠ دقيقة على يوتيوب. يوم خفيف.", courseIds: ["typo-ar", "typo-en"], kind: "study" },
-  { id: "d07", iso: "2026-12-03", date: "خميس ٣ ديسمبر", title: "آخر درسين من البراند آيدينتيتي", detail: "كده تخلص كورس البراند آيدينتيتي كله.", courseIds: ["identity"], kind: "study" },
-  { id: "d08", iso: "2026-12-04", date: "جمعة ٤ ديسمبر", title: "٦ دروس من كورس الجريد واللاي آوت", detail: "كورس الجريد واللاي آوت، تيرا كورسسز.", courseIds: ["grid"], kind: "study" },
-  { id: "d09", iso: "2026-12-05", date: "سبت ٥ ديسمبر", title: "أول ٤ دروس من كورس إليستريتور", detail: "كورس إليستريتور على موقع الببلي.", courseIds: ["illustrator"], kind: "study" },
-  { id: "d10", iso: "2026-12-06", date: "حد ٦ ديسمبر", title: "باقي دروس كورس الجريد، ٥ دروس", detail: "كده تخلص كورس الجريد واللاي آوت كله.", courseIds: ["grid"], kind: "study" },
-  { id: "d11", iso: "2026-12-07", date: "اتنين ٧ ديسمبر", title: "راحة", detail: "يوم راحة، خد نفسك.", courseIds: [], kind: "rest" },
-  { id: "d12", iso: "2026-12-08", date: "تلات ٨ ديسمبر", title: "٤ دروس من كورس إليستريتور", detail: "كورس إليستريتور على موقع الببلي.", courseIds: ["illustrator"], kind: "study" },
-  { id: "d13", iso: "2026-12-09", date: "أربع ٩ ديسمبر", title: "آخر ٣ دروس من كورس إليستريتور", detail: "كده تخلص كورس إليستريتور كله.", courseIds: ["illustrator"], kind: "study" },
-  { id: "d14", iso: "2026-12-10", date: "خميس ١٠ ديسمبر", title: "مشروع صغير: براند آيدينتيتي مصغر لبراند خيالي", detail: "طبّق كل اللي اتعلمته في مشروع واحد صغير: لوجو وألوان وخطوط لبراند من خيالك.", courseIds: [], kind: "project" }
+  { id: "d01", iso: "2026-11-28", date: "سبت ٢٨ نوفمبر", title: "أساسيات التصميم ونظرية اللون", detail: "فيديو أساسيات التصميم لأحمد حمدي، ٦١ دقيقة، وبعده فيديو نظرية اللون من فات جرافيكس، ٢٦ دقيقة. أول يوم، ٨٧ دقيقة بالظبط.", courseIds: ["fund", "color"], kind: "study" },
+  { id: "d02", iso: "2026-11-29", date: "حد ٢٩ نوفمبر", title: "تفاعل اللون وأول الجريد", detail: "ملخص كتاب تفاعل اللون، ٤ أجزاء، ٢٩ دقيقة، وبعده فيديو أنواع الجريد، ١٨ دقيقة، وأول جزء من أسرار اللاي آوت. لينك الملخص أول جزء، وباقي الأجزاء مرقمة على القناة.", courseIds: ["color-book", "grid-types", "layout-1"], kind: "study" },
+  { id: "d03", iso: "2026-11-30", date: "اتنين ٣٠ نوفمبر", title: "أنظمة الجريد وأسرار اللاي آوت", detail: "ملخص كتاب أنظمة الجريد، ٤ أجزاء، ٤١ دقيقة، وتاني جزء من أسرار اللاي آوت. لينك الملخص أول جزء.", courseIds: ["grid-book", "layout-2"], kind: "study" },
+  { id: "d04", iso: "2026-12-01", date: "تلات ١ ديسمبر", title: "درس الجريد لأحمد ماهر، النص الأول", detail: "الدرس حوالي ساعتين، مقسوم على يومين. النهارده أول ساعة.", courseIds: ["maher"], kind: "study" },
+  { id: "d05", iso: "2026-12-02", date: "أربع ٢ ديسمبر", title: "درس أحمد ماهر، النص التاني", detail: "كمّل تاني ساعة من الدرس، وطبّق بإيدك: ارسم جريد لتصميم قديم عندك.", courseIds: ["maher"], kind: "study" },
+  { id: "d06", iso: "2026-12-03", date: "خميس ٣ ديسمبر", title: "الجريد الموديولار وبداية التايبوجرافي", detail: "فيديو الجريد الموديولار في إنديزاين، ٣٤ دقيقة، وبعده فيديو التايبوجرافي في التصميم، ٢٠ دقيقة. يوم خفيف.", courseIds: ["indesign", "typo-design"], kind: "study" },
+  { id: "d07", iso: "2026-12-04", date: "جمعة ٤ ديسمبر", title: "راحة", detail: "يوم راحة، خد نفسك.", courseIds: [], kind: "rest" },
+  { id: "d08", iso: "2026-12-05", date: "سبت ٥ ديسمبر", title: "التفكير في التايبوجرافي", detail: "ملخص كتاب التفكير في التايبوجرافي، ٤ أجزاء، ٣٧ دقيقة. لينك الملخص أول جزء. بعدها طبّق: اكتب اسمك ب٣ خطوط مختلفة وقارن بينهم.", courseIds: ["typo-book"], kind: "study" },
+  { id: "d09", iso: "2026-12-06", date: "حد ٦ ديسمبر", title: "ورشة التايبوجرافي العربي، الجزء الأول", detail: "ورشة ستوديو رفيق، الجزء الأول ٧٦ دقيقة. اللينك قائمة التشغيل فيها الجزأين.", courseIds: ["rafeeq"], kind: "study" },
+  { id: "d10", iso: "2026-12-07", date: "اتنين ٧ ديسمبر", title: "ورشة رفيق، الجزء التاني", detail: "كمّل الجزء التاني من الورشة، وطبّق على كلمة عربية من اختيارك.", courseIds: ["rafeeq"], kind: "study" },
+  { id: "d11", iso: "2026-12-08", date: "تلات ٨ ديسمبر", title: "سلسلة البراند آيدينتيتي، جزء ١ و٢", detail: "أول جزأين من سلسلة فات جرافيكس، حوالي ٥٦ دقيقة.", courseIds: ["fg-id-1", "fg-id-2"], kind: "study" },
+  { id: "d12", iso: "2026-12-09", date: "أربع ٩ ديسمبر", title: "سلسلة البراند آيدينتيتي، جزء ٣ و٤", detail: "آخر جزأين من السلسلة، وبعدهم فيديو الآرت دايركشن من أورانج سكوير، ٢٤ دقيقة.", courseIds: ["fg-id-3", "fg-id-4", "artdir"], kind: "study" },
+  { id: "d13", iso: "2026-12-10", date: "خميس ١٠ ديسمبر", title: "كورس كمال وحيد، حلقات ١ لـ ٣", detail: "بداية كورس البراند آيدينتيتي لكمال وحيد، وهو الكورس الأساسي في الهوية. اللينك أول حلقة، والحلقات مرقمة على قناته.", courseIds: ["kamal"], kind: "study" },
+  { id: "d14", iso: "2026-12-11", date: "جمعة ١١ ديسمبر", title: "راحة", detail: "يوم راحة، خد نفسك.", courseIds: [], kind: "rest" },
+  { id: "d15", iso: "2026-12-12", date: "سبت ١٢ ديسمبر", title: "كمال وحيد، حلقات ٤ لـ ٦", detail: "تكملة الكورس. لو الحلقات أطول من ٩٠ دقيقة في اليوم، سيب الباقي ليوم الاحتياطي.", courseIds: ["kamal"], kind: "study" },
+  { id: "d16", iso: "2026-12-13", date: "حد ١٣ ديسمبر", title: "كمال وحيد، حلقات ٧ لـ ٩", detail: "تكملة الكورس.", courseIds: ["kamal"], kind: "study" },
+  { id: "d17", iso: "2026-12-14", date: "اتنين ١٤ ديسمبر", title: "كمال وحيد، حلقات ١٠ لـ ١٣", detail: "آخر حلقات الكورس. لو محتاج وقت زيادة، يوم بكرة احتياطي.", courseIds: ["kamal"], kind: "study" },
+  { id: "d18", iso: "2026-12-15", date: "تلات ١٥ ديسمبر", title: "يوم احتياطي", detail: "لو يوم فاتك، لحقه النهارده. لو ماشي كويس، اتفرج على أول درسين من كورس الخط العربي الاختياري، أو ابدأ كورس هوثر الاختياري.", courseIds: [], kind: "rest" },
+  { id: "d19", iso: "2026-12-16", date: "أربع ١٦ ديسمبر", title: "إليستريتور مع ياسر سامي، النص الأول", detail: "الكورس ساعة و٥٥ دقيقة، مقسوم على يومين. النهارده أول ساعة.", courseIds: ["yaser"], kind: "study" },
+  { id: "d20", iso: "2026-12-17", date: "خميس ١٧ ديسمبر", title: "ياسر سامي، النص التاني", detail: "كمّل باقي الكورس، وطبّق على شكل بسيط من الخيال.", courseIds: ["yaser"], kind: "study" },
+  { id: "d21", iso: "2026-12-18", date: "جمعة ١٨ ديسمبر", title: "راحة", detail: "يوم راحة، خد نفسك.", courseIds: [], kind: "rest" },
+  { id: "d22", iso: "2026-12-19", date: "سبت ١٩ ديسمبر", title: "إليستريتور مع قدري المنشاوي، الجزء الأول", detail: "الكورس ساعتين و٥٥ دقيقة، مقسوم على يومين. النهارده أول ٩٠ دقيقة.", courseIds: ["qadri"], kind: "study" },
+  { id: "d23", iso: "2026-12-20", date: "حد ٢٠ ديسمبر", title: "قدري المنشاوي، الجزء التاني", detail: "كمّل باقي الكورس، حوالي ٨٥ دقيقة.", courseIds: ["qadri"], kind: "study" },
+  { id: "d24", iso: "2026-12-21", date: "اتنين ٢١ ديسمبر", title: "المشروع: البريف والمود بورد", detail: "اختار براند خيالي، اكتب بريف من ٥ سطور، واعمل مود بورد للألوان والشكل العام.", courseIds: [], kind: "project" },
+  { id: "d25", iso: "2026-12-22", date: "تلات ٢٢ ديسمبر", title: "المشروع: سكتشات اللوجو والخط العربي", detail: "سكتشات لوجو بالقلم، وجرب تايبوجرافي عربي لاسم البراند زي ورشة رفيق.", courseIds: [], kind: "project" },
+  { id: "d26", iso: "2026-12-23", date: "أربع ٢٣ ديسمبر", title: "المشروع: الألوان والتطبيقات", detail: "حدد باليت الألوان بناء على نظرية اللون، وطبّق الهوية على ٣ حاجات: كارت، بوست، وغلاف.", courseIds: [], kind: "project" },
+  { id: "d27", iso: "2026-12-24", date: "خميس ٢٤ ديسمبر", title: "المشروع: التجميع والنشر", detail: "جمّع الشغل في صفحة عرض واحدة وانشره على بيهانس. آخر يوم في الخطة.", courseIds: [], kind: "project" }
 ];
 
 const rules = [
   "جلسة واحدة بس في اليوم، ساعة ونص كحد أقصى.",
   "كل يوم موضوع مختلف عشان متزهقش.",
-  "يوم راحة كل أسبوع، ومفيهوش تفاوض.",
+  "الجمعة راحة كل أسبوع، ومفيهاش تفاوض.",
   "لو زهقت في جلسة، وقف وكمّل بكرة.",
-  "من ١١ لحد ١٣ ديسمبر أيام احتياطي لو اتأخرت."
+  "يوم ١٥ ديسمبر احتياطي للحق أي حاجة فاتتك.",
+  "لو حلقات كمال وحيد طلعت أطول من يومها، كمّلها في يوم الاحتياطي.",
+  "آخر ٤ أيام مشروع صغير تطبّق فيه كل اللي اتعلمته."
 ];
 
 let state = {};
@@ -391,8 +435,10 @@ resetBtn.addEventListener("click", () => {
 });
 
 /* render */
-days.slice(0, 7).forEach((d, i) => document.getElementById("week1").appendChild(dayCard(d, i)));
-days.slice(7).forEach((d, i) => document.getElementById("week2").appendChild(dayCard(d, i + 7)));
+const weekBounds = [["week1", 0, 7], ["week2", 7, 14], ["week3", 14, 21], ["week4", 21, days.length]];
+for (const [wid, a, b] of weekBounds) {
+  days.slice(a, b).forEach((d, i) => document.getElementById(wid).appendChild(dayCard(d, i + a)));
+}
 rules.forEach((rule, i) => {
   const li = el("li", "cp-rule reveal", rule);
   li.style.setProperty("--rr", (i % 2 === 0 ? "-.9deg" : ".7deg"));
