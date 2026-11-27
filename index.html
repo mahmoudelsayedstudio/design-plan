@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>خطة شهر لتعلّم التصميم</title>
+<meta name="description" content="خطة ٢٧ يوم لتعلّم الأساسيات واللون والجريد والتايبوجرافي والبراند آيدينتيتي وإليستريتور، من ٢٨ نوفمبر لحد ٢٤ ديسمبر ٢٠٢٦. كل الكورسات عربي ومجانية وحديثة.">
+<meta name="theme-color" content="#f3ead9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="bg" id="bg" aria-hidden="true"></div>
+<main class="page">
+  <header class="cp-hero">
+    <div class="cp-hero-frame reveal" style="--rr:-1deg">
+      <img src="./hero.jpg" alt="كولاج ورقي فيه مقص ومسطرة وقلم وورق ملون مقصوص">
+      <span class="cp-tape cp-tape-ochre cp-hero-tape-r" aria-hidden="true"></span>
+      <span class="cp-tape cp-tape-teal cp-hero-tape-l" aria-hidden="true"></span>
+    </div>
+    <h1 class="cp-title reveal" style="--d:.08s">خطة شهر لتعلّم التصميم</h1>
+    <p class="cp-sub reveal" style="--d:.16s">٢٧ يوم من ٢٨ نوفمبر لحد ٢٤ ديسمبر. كل الكورسات عربي ومجانية وحديثة. علّم على كل يوم تخلصه، والعدّاد هيفضل محفوظ على موبايلك.</p>
+  </header>
+
+  <section class="cp-progress reveal" style="--rr:.7deg" aria-label="تقدمك في الخطة">
+    <span class="cp-tape cp-tape-teal" aria-hidden="true"></span>
+    <div class="cp-progress-top">
+      <span class="cp-progress-count" id="pCount">لسه في الأول</span>
+      <span class="cp-progress-pct" id="pPct">٠٪</span>
+    </div>
+    <div class="cp-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="نسبة التقدم" id="pBar">
+      <div class="cp-bar-fill" id="pFill"></div>
+    </div>
+    <div class="cp-progress-bottom">
+      <span class="cp-saved">العلامات بتتحفظ على جهازك ده.</span>
+      <button type="button" class="cp-reset" id="resetBtn" hidden>ابدأ من الأول</button>
+    </div>
+  </section>
+
+  <div class="tear" aria-hidden="true"></div>
+
+  <section class="cp-rules" aria-label="قوانين الخطة">
+    <h2 class="cp-section-title reveal">قوانين الخطة</h2>
+    <ul class="cp-rules-grid" id="rulesGrid"></ul>
+  </section>
+
+  <section class="cp-week" id="week1" aria-label="الأسبوع الأول">
+    <div class="cp-week-head reveal">
+      <h2 class="cp-week-title">الأسبوع الأول</h2>
+      <span class="cp-week-range">٢٨ نوفمبر ← ٤ ديسمبر</span>
+    </div>
+  </section>
+  <div class="tear t2" aria-hidden="true"></div>
+  <section class="cp-week" id="week2" aria-label="الأسبوع التاني">
+    <div class="cp-week-head reveal">
+      <h2 class="cp-week-title">الأسبوع التاني</h2>
+      <span class="cp-week-range">٥ ← ١١ ديسمبر</span>
+    </div>
+  </section>
+  <div class="tear t2" aria-hidden="true"></div>
+  <section class="cp-week" id="week3" aria-label="الأسبوع التالت">
+    <div class="cp-week-head reveal">
+      <h2 class="cp-week-title">الأسبوع التالت</h2>
+      <span class="cp-week-range">١٢ ← ١٨ ديسمبر</span>
+    </div>
+  </section>
+  <div class="tear t2" aria-hidden="true"></div>
+  <section class="cp-week" id="week4" aria-label="الأسبوع الرابع">
+    <div class="cp-week-head reveal">
+      <h2 class="cp-week-title">الأسبوع الرابع</h2>
+      <span class="cp-week-range">١٩ ← ٢٤ ديسمبر</span>
+    </div>
+  </section>
+
+  <section class="cp-buffer" aria-label="أيام احتياطي">
+    <div class="cp-buffer-note reveal" style="--rr:-.9deg">
+      <span class="cp-tape cp-tape-terra" aria-hidden="true"></span>
+      <h2 class="cp-buffer-title">يوم احتياطي جوه الخطة: ١٥ ديسمبر</h2>
+      <p>لو يوم فاتك، لحقه يوم ١٥ ديسمبر من غير ما تزعل نفسك. والجمعة ٢٥ ديسمبر راحة بعد آخر يوم. الخطة مظبوطة على إن الحياة بتحصل.</p>
+    </div>
+  </section>
+
+  <section class="cp-courses" aria-label="لينكات الكورسات">
+    <h2 class="cp-section-title reveal">لينكات الكورسات</h2>
+    <div class="cp-course-list" id="courseList"></div>
+  </section>
+
+  <footer class="cp-closing">اتعملت الخطة ٢٧ نوفمبر ٢٠٢٦. العلامات والعدّاد بيتحفظوا على جهازك بس.</footer>
+</main>
+<script src="./app.js" defer></script>
+</body>
+</html>
